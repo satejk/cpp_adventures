@@ -1,0 +1,6 @@
+--------point Class-------------
+Parameterized constructor called
+Parameterized constructor called
+Distance between the points is 10.4403.
+Destructor called
+Destructor called
