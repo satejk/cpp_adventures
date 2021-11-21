@@ -14,6 +14,8 @@ public:
 
     double angleRadian2Degree(double rad);
     double angleDegree2Radians(double degree);
+    double computeVelocityTurboPropEngineFan(double time);
+    double computeAccelerationTurboPropEngineFan(double velocity);
 };
 
 #endif // PHYSICS

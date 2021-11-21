@@ -28,3 +28,24 @@ double physics::angleDegree2Radians(double degree)
     return angleRadians;
 
 }
+
+double physics::computeVelocityTurboPropEngineFan(double time)
+{
+    const double alpha = 0.00001;
+    const double beta =  0.00488;
+    const double gamma = 0.75795;
+    const double delta = 181.3566;
+
+    double velocity = alpha * pow(time,3) - beta * pow(time,2) + gamma * time + delta;
+
+    return velocity;
+}
+
+double physics::computeAccelerationTurboPropEngineFan(double velocity)
+{
+
+    const double sigma = 0.000062;
+    double acc = 3 - sigma * (velocity * velocity);
+
+    return acc;
+}

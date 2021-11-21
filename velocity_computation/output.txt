@@ -1,6 +1,12 @@
 --------velocity computation-------------
 Default physics constructor called
 Enter a angle in radians:
-5.66
-The angle in degrees is :324.29
+3.14
+The angle in degrees is :179.90875
+Enter time in seconds:
+120
+Velocity after 120.00000seconds = 219.31860 m/s
+Velocity after 119.00000seconds = 219.29856 m/s
+Actual Acceleration = 0.02004m/s^2
+Acceleration from formula at 120.00000seconds = 0.01776 m/s^2
 Default physics desstructor called
