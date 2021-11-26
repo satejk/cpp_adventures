@@ -24,13 +24,38 @@ point::~point()
 }
 
 //Function definitions
-double point::getXcoord()
+double point::getXcoord() const 
 {
     return xCoord;
 }
 
-double point::getYcoord()
+double point::getYcoord() const
 {
     return yCoord;
 }
 
+
+double point::operator -(const point& rhs) const
+{
+    double valueX = rhs.getXcoord() - xCoord;
+    double valueY = rhs.getYcoord() - yCoord;
+
+    return valueY;
+
+}
+
+
+bool point::operator ==(const point& rhs) const
+{
+    if (rhs.getXcoord() == xCoord && rhs.getYcoord() == yCoord)
+    {
+        /* code */
+        return true;
+    }
+    else
+    {
+        /* code */
+        return false;
+    }
+    
+}

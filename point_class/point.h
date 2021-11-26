@@ -13,8 +13,12 @@ public:
     point(double x, double y);
     virtual ~point();
 
-    double getXcoord();
-    double getYcoord();
+    double getXcoord() const;
+    double getYcoord() const;
+
+    //overloaded operators
+    double operator -(const point& rhs) const;
+    bool operator ==(const point& rhs) const;
 };
 
 
